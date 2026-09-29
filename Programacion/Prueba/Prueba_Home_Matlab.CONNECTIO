@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ConnectIO Version="Beta v1.2.7">
+  <Properties CycleTime="10" />
+  <Diagram DiagramPosition="-1101,-20" DiagramScale="0.863837598531476">
+    <NodeData Key="3" Location="-570 120" NodeType="InputBit" MemMapAddress="15" NodeDescription="A - Motion Detector" />
+    <NodeData Key="4" Location="-710 -20" NodeType="InternalCustomNodeAsync" AssemblyName="Modbus TCP-IP" NodeID="ConnectIO.Plugins.Modbus.Server" />
+    <NodeData Key="2" Location="-410 80" NodeType="InternalCustomNode" AssemblyName="Modbus TCP-IP" NodeID="ConnectIO.Plugins.Modbus.WriteDiscreteChunk" />
+    <NodeData Key="5" Location="-870 20" NodeType="BooleanSource" ButtonChecked="True" />
+    <NodeData Key="6" Location="180 250" NodeType="OutputBit" MemMapAddress="0" NodeDescription="A - Lights" />
+    <NodeData Key="7" Location="-40 250" NodeType="InternalCustomNode" AssemblyName="Modbus TCP-IP" NodeID="ConnectIO.Plugins.Modbus.ReadDiscreteChunk" />
+    <NodeData Key="8" Location="-940 270" NodeType="InternalMemoryFloat" MemMapAddress="141" NodeDescription="Instant Power [w]" />
+    <LinkData From="3" To="2" FromPort="Out-Bit-0" ToPort="In-Bit-2" NodeType="LinkData" />
+    <LinkData From="4" To="2" FromPort="Out-String-1" ToPort="In-String-0" NodeType="LinkData" />
+    <LinkData From="5" To="4" FromPort="Out-Bit-0" ToPort="In-Bit-0" NodeType="LinkData" />
+    <LinkData From="7" To="6" FromPort="Out-Bit-0" ToPort="In-Bit-0" NodeType="LinkData" />
+    <LinkData From="4" To="7" FromPort="Out-String-1" ToPort="In-String-0" NodeType="LinkData" />
+  </Diagram>
+</ConnectIO>
