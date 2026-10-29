@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ConnectIO Version="Beta v1.2.7">
+  <Properties CycleTime="10" />
+  <Diagram DiagramPosition="-497,82" DiagramScale="0.458111521991399">
+    <NodeData Key="2" Location="-310 210" NodeType="InputFloat" MemMapAddress="0" NodeDescription="A - Brightness Sensor (Analog)" />
+    <NodeData Key="3" Location="-100 250" NodeType="InternalCustomNode" AssemblyName="Function Blocks" NodeID="ConnectIO.Plugins.FunctionBlocks.LessOrEqual" />
+    <NodeData Key="4" Location="-270 320" NodeType="NumericalSource" OutSource="0.75" SourceValue="0.75" MinValue="0" MaxValue="1" />
+    <NodeData Key="6" Location="-90 430" NodeType="InternalCustomNode" AssemblyName="Function Blocks" NodeID="ConnectIO.Plugins.FunctionBlocks.TOf" />
+    <NodeData Key="7" Location="-270 390" NodeType="InputBit" MemMapAddress="15" NodeDescription="A - Motion Detector" />
+    <NodeData Key="8" Location="-270 490" NodeType="NumericalSource" OutSource="10000" SourceValue="10000" MinValue="0" MaxValue="10000" />
+    <NodeData Key="9" Location="-160 -90" NodeType="InternalCustomNodeAsync" AssemblyName="Modbus TCP-IP" NodeID="ConnectIO.Plugins.Modbus.Server" />
+    <NodeData Key="10" Location="240 390" NodeType="InternalCustomNode" AssemblyName="Modbus TCP-IP" NodeID="ConnectIO.Plugins.Modbus.WriteDiscreteChunk" />
+    <NodeData Key="11" Location="240 -210" NodeType="InternalCustomNode" AssemblyName="Modbus TCP-IP" NodeID="ConnectIO.Plugins.Modbus.ReadRegisterChunk" />
+    <NodeData Key="12" Location="-280 -70" NodeType="BooleanSource" ButtonChecked="True" />
+    <NodeData Key="15" Location="-430 540" NodeType="InputBit" MemMapAddress="274" NodeDescription="Remote Button 1" />
+    <NodeData Key="16" Location="-260 620" NodeType="InternalCustomNode" AssemblyName="Function Blocks" NodeID="ConnectIO.Plugins.FunctionBlocks.Or3" />
+    <NodeData Key="13" Location="-480 640" NodeType="InputBit" MemMapAddress="7" NodeDescription="A - Light Switch Dimmer 1 (Up)" />
+    <NodeData Key="14" Location="-480 740" NodeType="InputBit" MemMapAddress="9" NodeDescription="A - Light Switch Dimmer 2 (Up)" />
+    <NodeData Key="17" Location="-270 1030" NodeType="InternalCustomNode" AssemblyName="Function Blocks" NodeID="ConnectIO.Plugins.FunctionBlocks.Or3" />
+    <NodeData Key="18" Location="-450 950" NodeType="InputBit" MemMapAddress="275" NodeDescription="Remote Button 2" />
+    <NodeData Key="19" Location="-510 1040" NodeType="InputBit" MemMapAddress="8" NodeDescription="A - Light Switch Dimmer 1 (Down)" />
+    <NodeData Key="20" Location="-510 1130" NodeType="InputBit" MemMapAddress="10" NodeDescription="A - Light Switch Dimmer 2 (Down)" />
+    <NodeData Key="21" Location="450 -260" NodeType="OutputFloat" MemMapAddress="0" NodeDescription="A - Lights (Analog)" />
+    <NodeData Key="23" Location="930 -120" NodeType="BooleanSource" ButtonChecked="True" />
+    <NodeData Key="24" Location="1470 -170" NodeType="InternalCustomNode" AssemblyName="Modbus TCP-IP" NodeID="ConnectIO.Plugins.Modbus.ReadRegisterChunk" />
+    <NodeData Key="25" Location="1060 -70" NodeType="InternalCustomNodeAsync" AssemblyName="Modbus TCP-IP" NodeID="ConnectIO.Plugins.Modbus.Server" />
+    <NodeData Key="29" Location="1120 940" NodeType="InternalCustomNode" AssemblyName="Function Blocks" NodeID="ConnectIO.Plugins.FunctionBlocks.Or3" />
+    <NodeData Key="33" Location="1120 640" NodeType="InternalCustomNode" AssemblyName="Function Blocks" NodeID="ConnectIO.Plugins.FunctionBlocks.Or3" />
+    <NodeData Key="34" Location="1460 420" NodeType="InternalCustomNode" AssemblyName="Modbus TCP-IP" NodeID="ConnectIO.Plugins.Modbus.WriteDiscreteChunk" />
+    <NodeData Key="36" Location="950 510" NodeType="NumericalSource" OutSource="10000" SourceValue="10000" MinValue="0" MaxValue="10000" />
+    <NodeData Key="38" Location="1130 450" NodeType="InternalCustomNode" AssemblyName="Function Blocks" NodeID="ConnectIO.Plugins.FunctionBlocks.TOf" />
+    <NodeData Key="39" Location="950 340" NodeType="NumericalSource" OutSource="0.75" SourceValue="0.75" MinValue="0" MaxValue="1" />
+    <NodeData Key="40" Location="1120 270" NodeType="InternalCustomNode" AssemblyName="Function Blocks" NodeID="ConnectIO.Plugins.FunctionBlocks.LessOrEqual" />
+    <NodeData Key="42" Location="940 410" NodeType="InputBit" MemMapAddress="56" NodeDescription="D - Motion Detector" />
+    <NodeData Key="5" Location="910 200" NodeType="InputFloat" MemMapAddress="12" NodeDescription="D - Brightness Sensor (Analog)" />
+    <NodeData Key="26" Location="940 590" NodeType="InputBit" MemMapAddress="276" NodeDescription="Remote Button 3" />
+    <NodeData Key="32" Location="890 670" NodeType="InputBit" MemMapAddress="51" NodeDescription="D - Light Switch Dimmer 1 (Up)" />
+    <NodeData Key="31" Location="890 760" NodeType="InputBit" MemMapAddress="53" NodeDescription="D - Light Switch Dimmer 2 (Up)" />
+    <NodeData Key="30" Location="930 870" NodeType="InputBit" MemMapAddress="277" NodeDescription="Remote Button 4" />
+    <NodeData Key="28" Location="880 970" NodeType="InputBit" MemMapAddress="52" NodeDescription="D - Light Switch Dimmer 1 (Down)" />
+    <NodeData Key="27" Location="880 1080" NodeType="InputBit" MemMapAddress="54" NodeDescription="D - Light Switch Dimmer 2 (Down)" />
+    <NodeData Key="22" Location="1710 -100" NodeType="OutputFloat" MemMapAddress="33" NodeDescription="D - Lights 2 (Analog)" />
+    <NodeData Key="35" Location="1710 -210" NodeType="OutputFloat" MemMapAddress="32" NodeDescription="D - Lights 1 (Analog)" />
+    <NodeData Key="37" Location="-120 770" NodeType="InternalCustomNode" AssemblyName="Function Blocks" NodeID="ConnectIO.Plugins.FunctionBlocks.Or2" />
+    <NodeData Key="41" Location="-310 840" NodeType="InputBit" MemMapAddress="11" NodeDescription="A - Light Switch Dimmer 3 (Up)" />
+    <NodeData Key="43" Location="-110 1100" NodeType="InternalCustomNode" AssemblyName="Function Blocks" NodeID="ConnectIO.Plugins.FunctionBlocks.Or2" />
+    <NodeData Key="44" Location="-330 1180" NodeType="InputBit" MemMapAddress="12" NodeDescription="A - Light Switch Dimmer 3 (Down)" />
+    <NodeData Key="45" Location="880 -40" NodeType="NumericalSource" OutSource="503" SourceValue="503" MinValue="0" MaxValue="503" />
+    <LinkData From="2" To="3" FromPort="Out-Double-0" ToPort="In-Double-0" NodeType="LinkData" />
+    <LinkData From="4" To="3" FromPort="Out-Double-0" ToPort="In-Double-1" NodeType="LinkData" />
+    <LinkData From="7" To="6" FromPort="Out-Bit-0" ToPort="In-Bit-0" NodeType="LinkData" />
+    <LinkData From="8" To="6" FromPort="Out-Double-0" ToPort="In-Double-1" NodeType="LinkData" />
+    <LinkData From="12" To="9" FromPort="Out-Bit-0" ToPort="In-Bit-0" NodeType="LinkData" />
+    <LinkData From="9" To="10" FromPort="Out-String-1" ToPort="In-String-0" NodeType="LinkData" />
+    <LinkData From="9" To="11" FromPort="Out-String-1" ToPort="In-String-0" NodeType="LinkData" />
+    <LinkData From="3" To="10" FromPort="Out-Bit-0" ToPort="In-Bit-2" NodeType="LinkData" />
+    <LinkData From="6" To="10" FromPort="Out-Bit-0" ToPort="In-Bit-3" NodeType="LinkData" />
+    <LinkData From="15" To="16" FromPort="Out-Bit-0" ToPort="In-Bit-0" NodeType="LinkData" />
+    <LinkData From="13" To="16" FromPort="Out-Bit-0" ToPort="In-Bit-1" NodeType="LinkData" />
+    <LinkData From="14" To="16" FromPort="Out-Bit-0" ToPort="In-Bit-2" NodeType="LinkData" />
+    <LinkData From="18" To="17" FromPort="Out-Bit-0" ToPort="In-Bit-0" NodeType="LinkData" />
+    <LinkData From="19" To="17" FromPort="Out-Bit-0" ToPort="In-Bit-1" NodeType="LinkData" />
+    <LinkData From="20" To="17" FromPort="Out-Bit-0" ToPort="In-Bit-2" NodeType="LinkData" />
+    <LinkData From="11" To="21" FromPort="Out-Double-0" ToPort="In-Double-0" NodeType="LinkData" />
+    <LinkData From="25" To="24" FromPort="Out-String-1" ToPort="In-String-0" NodeType="LinkData" />
+    <LinkData From="23" To="25" FromPort="Out-Bit-0" ToPort="In-Bit-0" NodeType="LinkData" />
+    <LinkData From="25" To="34" FromPort="Out-String-1" ToPort="In-String-0" NodeType="LinkData" />
+    <LinkData From="40" To="34" FromPort="Out-Bit-0" ToPort="In-Bit-2" NodeType="LinkData" />
+    <LinkData From="38" To="34" FromPort="Out-Bit-0" ToPort="In-Bit-3" NodeType="LinkData" />
+    <LinkData From="29" To="34" FromPort="Out-Bit-0" ToPort="In-Bit-5" NodeType="LinkData" />
+    <LinkData From="33" To="34" FromPort="Out-Bit-0" ToPort="In-Bit-4" NodeType="LinkData" />
+    <LinkData From="36" To="38" FromPort="Out-Double-0" ToPort="In-Double-1" NodeType="LinkData" />
+    <LinkData From="39" To="40" FromPort="Out-Double-0" ToPort="In-Double-1" NodeType="LinkData" />
+    <LinkData From="42" To="38" FromPort="Out-Bit-0" ToPort="In-Bit-0" NodeType="LinkData" />
+    <LinkData From="5" To="40" FromPort="Out-Double-0" ToPort="In-Double-0" NodeType="LinkData" />
+    <LinkData From="26" To="33" FromPort="Out-Bit-0" ToPort="In-Bit-0" NodeType="LinkData" />
+    <LinkData From="32" To="33" FromPort="Out-Bit-0" ToPort="In-Bit-1" NodeType="LinkData" />
+    <LinkData From="31" To="33" FromPort="Out-Bit-0" ToPort="In-Bit-2" NodeType="LinkData" />
+    <LinkData From="30" To="29" FromPort="Out-Bit-0" ToPort="In-Bit-0" NodeType="LinkData" />
+    <LinkData From="28" To="29" FromPort="Out-Bit-0" ToPort="In-Bit-1" NodeType="LinkData" />
+    <LinkData From="27" To="29" FromPort="Out-Bit-0" ToPort="In-Bit-2" NodeType="LinkData" />
+    <LinkData From="24" To="35" FromPort="Out-Double-0" ToPort="In-Double-0" NodeType="LinkData" />
+    <LinkData From="24" To="22" FromPort="Out-Double-0" ToPort="In-Double-0" NodeType="LinkData" />
+    <LinkData From="16" To="37" FromPort="Out-Bit-0" ToPort="In-Bit-0" NodeType="LinkData" />
+    <LinkData From="41" To="37" FromPort="Out-Bit-0" ToPort="In-Bit-1" NodeType="LinkData" />
+    <LinkData From="37" To="10" FromPort="Out-Bit-0" ToPort="In-Bit-4" NodeType="LinkData" />
+    <LinkData From="17" To="43" FromPort="Out-Bit-0" ToPort="In-Bit-0" NodeType="LinkData" />
+    <LinkData From="44" To="43" FromPort="Out-Bit-0" ToPort="In-Bit-1" NodeType="LinkData" />
+    <LinkData From="43" To="10" FromPort="Out-Bit-0" ToPort="In-Bit-5" NodeType="LinkData" />
+    <LinkData From="45" To="25" FromPort="Out-Double-0" ToPort="In-Double-1" NodeType="LinkData" />
+  </Diagram>
+</ConnectIO>
